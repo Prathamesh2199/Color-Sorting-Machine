@@ -46,19 +46,19 @@ int detectColor() {
 
 //Readings are different for different setup
 //change the readings according your project and readings detected
-                                                             if(R<3400 & R>2600 & B<3400 & B>2600 & G<3500 & G>2200 ){
+                                                             if(R<3400 & R>2600 & B<2500 & B>1800 ){
                                                                 color = 1; // Red
                                                                 Serial.print("Detected Color is = ");
                                                                 Serial.println("RED");
                                                              }
   
-  if( R<4500 & R>3500 & B<4500 & B>3500 & G<4300 & G>3600){
+  if( R<6500 & R>5400 & G<7200 & G>5700){
     color = 3; // Green
       Serial.print("Detected Color is = ");
     Serial.println("GREEN");
   }
   
-  if (R<2500 & R>1800 & B<2500 & B>1000 & G<2100 & G>1500 ){
+  if ( B<2500 & B>1000 & G<4500 & G>3500 ){
     color = 5; // Blue
      Serial.print("Detected Color is = "); 
     Serial.println("BLUE");
